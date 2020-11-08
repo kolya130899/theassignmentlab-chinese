@@ -8,7 +8,7 @@ $url = "/"
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="img/favicon.png">
+  <link rel="icon" href="<?= $url; ?>img/favicon.png">
   <title>theassignmentlab</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?= $url; ?>css/normalize.css">
