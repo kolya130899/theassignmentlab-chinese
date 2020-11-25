@@ -268,18 +268,40 @@ include("components/head.php")
 
   <section class="testimonials content-section">
     <h2 class="section-title">客户的反馈意见</h2>
-    <!-- <div class="testimonials-wrapper">
-      <div class="device device-iphone-x">
-        <div class="device-frame">
-          <img class="device-content" src="" alt="">
-        </div>
-        <div class="device-stripe"></div>
-        <div class="device-header"></div>
-        <div class="device-sensors"></div>
-        <div class="device-btns"></div>
-        <div class="device-power"></div>
+    <div class="testimonials__slider-container">
+      <div class="testimonials__slider--controls">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="testi-prev-btn">
+          <circle cx="24" cy="24" r="24" fill="#F8F8F8" />
+          <path d="M27.41 19.41L26 18L20 24L26 30L27.41 28.59L22.83 24L27.41 19.41Z" fill="#666C7D" />
+        </svg>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="testi-next-btn">
+          <circle cx="24" cy="24" r="24" fill="#F8F8F8" />
+          <path d="M20.59 28.59L22 30L28 24L22 18L20.59 19.41L25.17 24L20.59 28.59Z" fill="#666C7D" />
+        </svg>
       </div>
-    </div> -->
+
+
+      <!-- should be mask -->
+      <!-- <svg width="255" height="548" viewBox="0 0 255 548" fill="none" xmlns="http://www.w3.org/2000/svg" class="mask">
+        <defs>
+          <mask id="mask" x="0" y="0" width="255" height="548">
+            <rect x="0" y="0" width="255" height="548" />
+            <path d="M253.004 30.9672V30.9652C252.961 21.5241 250.206 14.2411 245.158 9.31969C240.112 4.39973 232.833 1.89648 223.853 1.89648H201.155C198.794 1.89648 196.867 3.82343 196.867 6.1856V7.83193C196.867 15.651 190.52 21.999 182.703 21.999H71.9001C64.0824 21.999 57.7357 15.651 57.7357 7.83193V6.1856C57.7357 3.82343 55.809 1.89648 53.4475 1.89648H30.7499C21.7701 1.89648 14.4906 4.39967 9.45513 9.31999C4.41796 14.242 1.68481 21.5257 1.68481 30.9672V518.282C1.68481 527.753 5.07616 534.754 10.5558 539.386C16.0248 544.008 23.5295 546.226 31.7028 546.226H222.986C231.138 546.226 238.643 544.008 244.117 539.386C249.602 534.754 253.004 527.753 253.004 518.282V30.9672Z" stroke="black" stroke-opacity="0.1" stroke-width="2" />
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="255" height="548" />
+      </svg> -->
+
+
+      <div class="testimonials__slider">
+        <div class="testimonials__slider--slide">screen</div>
+        <div class="testimonials__slider--slide">screen</div>
+        <div class="testimonials__slider--slide">screen</div>
+        <div class="testimonials__slider--slide">screen</div>
+        <div class="testimonials__slider--slide">screen</div>
+        <div class="testimonials__slider--slide">screen</div>
+      </div>
+    </div>
   </section>
 
   <section class="numbers content-section">

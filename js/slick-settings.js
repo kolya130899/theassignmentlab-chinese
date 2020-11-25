@@ -24,4 +24,14 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".testimonials__slider").slick({
+    centerMode: true,
+    centerPadding: "80px",
+    variableWidth: true,
+    infinite: true,
+    slidesToShow: 3,
+    prevArrow: $(".testi-prev-btn"),
+    nextArrow: $(".testi-next-btn"),
+  });
 });
