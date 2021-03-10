@@ -226,10 +226,6 @@ include("../components/head.php");
   ?>
 
 
-  <script src="./index.js"></script>
-
-
-
 </body>
 
 </html>
