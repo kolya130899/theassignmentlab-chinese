@@ -4,47 +4,9 @@ include("../components/head.php")
 
 <body>
   <header class="header">
-    <div class="header-wrapper">
-      <!-- MOBILE NAVBAR -->
-      <div class="header__toggler">
-        <span class="header__toggler--item"></span>
-
-      </div>
-      <nav class="header__navbar-mobile">
-        <a href="#" class="text" id="open-mobile-subnavbar">代谢服务</a>
-        <nav class="header__navbar-mobile--subnavbar">
-          <a href="#" class="text">Essay 代写服务</a>
-          <a href="#" class="text">网课代写服务</a>
-          <a href="#" class="text">考试代写服务</a>
-          <a href="#" class="text"> Assignment 代写服务</a>
-        </nav>
-        <a href="#" class="text">计算价格</a>
-        <a href="#" class="text">博客</a>
-        <a href="#" class="text">常见问题</a>
-        <a href="#" class="text">联系客服</a>
-      </nav>
-
-      <!-- LOGO -->
-      <a href="<?= $url; ?>" class="header__logo">
-        <img src="<?= $url; ?>img/logo-white.svg" alt="">
-      </a>
-      <!-- DESKTOP NAVBAR -->
-      <nav class="header__navbar">
-        <a href="#" class="text" id="open-subnavbar">代谢服务</a>
-        <nav class="header__navbar--subnavbar">
-          <a href="#" class="text">Essay 代写服务</a>
-          <a href="#" class="text">网课代写服务</a>
-          <a href="#" class="text">考试代写服务</a>
-          <a href="#" class="text"> Assignment 代写服务</a>
-        </nav>
-        <a href="#" class="text">计算价格</a>
-        <a href="#" class="text">博客</a>
-        <a href="#" class="text">常见问题</a>
-        <a href="#" class="text">联系客服</a>
-      </nav>
-      <!-- BUTTON -->
-      <span class="header__btn page-btn text">用户登陆</span>
-    </div>
+    <?php
+    include("../components/header.php");
+    ?>
   </header>
 
   <section class="top-section">
