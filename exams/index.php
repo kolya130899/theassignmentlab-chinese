@@ -88,18 +88,18 @@ include("../components/head.php");
         </div>
         <div class="pricing-table__row">
           <p class="pricing-table__row--cell">
-            个人陈述/目的陈述/申请论文/学习计划/研究计划 Personal Statement, Statement of Purpose, Application Essay, Motivation Letter, Study Plan, Research Proposal
+            个人陈述/目的陈述/申请论文/<br class="br-550px">学习计划/研究计划 Personal<br class="br-550px"> Statement, Statement of<br class="br-550px"> Purpose, Application Essay,<br class="br-550px"> Motivation Letter, Study<br class="br-550px"> Plan, Research Proposal
           </p>
           <p class="pricing-table__row--cell">$59.<span>00</span></p>
           <p class="pricing-table__row--cell">$109.<span>00</span></p>
         </div>
         <div class="pricing-table__row">
-          <p class="pricing-table__row--cell">推荐信/表 Recommendation Letter</p>
+          <p class="pricing-table__row--cell">推荐信/表 Recommendation<br class="br-550px"> Letter</p>
           <p class="pricing-table__row--cell">$59.<span>00</span></p>
           <p class="pricing-table__row--cell">$99.<span>00</span></p>
         </div>
         <div class="pricing-table__row">
-          <p class="pricing-table__row--cell"> 简历 Curriculum Vitae/Résumé</p>
+          <p class="pricing-table__row--cell"> 简历 Curriculum<br class="br-550px"> Vitae/Résumé</p>
           <p class="pricing-table__row--cell">$49.<span>00</span></p>
           <p class="pricing-table__row--cell">$89.<span>00</span></p>
         </div>
