@@ -15,4 +15,5 @@ $url = "/"
   <link rel="stylesheet" type="text/css" href="<?= $url; ?>css/style.css?v=2<? echo date('DMjG:i:sTY') ?>">
   <link rel="stylesheet" type="text/css" href="<?= $url; ?>css/devices.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
 </head>

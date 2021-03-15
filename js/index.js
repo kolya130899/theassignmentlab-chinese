@@ -1,4 +1,4 @@
-// CUSTOM SELECT OPEN
+// CUSTOM SELECT TOGGLE
 function toggleDropdownMenu() {
   $(document).on("click", ".custom-form-element__select", function () {
     if ($(this).hasClass("active")) {
@@ -24,6 +24,7 @@ function toggleDropdownMenuOnDocumentClick() {
     }
   });
 }
+// end CUSTOM SELECT TOGGLE
 
 // OPEN DESKTOP SUBNAVBAR
 
@@ -100,10 +101,10 @@ function fadeHeaderOnSctoll() {
   });
 }
 
-// REDIRECT to order form ON SUBMIT BUTTON CLICK
+// REDIRECT TO CHECKOUT ON HERO FORM SUBMIT
 function redirectOnPreorderFormSubmit() {
   $(document).on("click", ".submit-btn", function () {
-    window.location.href = "/order-form";
+    window.location.href = "/checkout?form=order-details";
   });
 }
 
@@ -115,61 +116,7 @@ function dateInputTypeChange() {
   });
 }
 
-// HIDE NOT ACTIVE FORM
-function hideNotActiveForm() {
-  if ($(".form-section__body")) {
-    $(".reg-forms-toggler > input").each(function () {
-      if ($(this).attr("checked")) {
-        var formID = $(this).attr("id");
-        console.log(formID);
-        $("#" + formID + "-form").addClass("active-reg");
-      }
-    });
-  }
-
-  $(document).on("click", ".reg-forms-toggler > input", function () {
-    // console.log("click");
-    // if (!$(this).attr("checked")) {
-    $(".active-reg").removeClass("active-reg");
-
-    var formID = $(this).attr("id");
-    $("#" + formID + "-form").addClass("active-reg");
-    // }
-  });
-
-  $("form").submit(function () {
-    $(".form-section__body--order-form").removeClass("active");
-  });
-}
-
-$(".order-form__submit.order").click(function () {
-  console.log($("#order-form"));
-  $("#order-form").removeClass("active-form");
-  $(".reg-form").addClass("active-form");
-  $(".form-section__progressbar").children(".block").eq(1).addClass("active");
-  $(".form-section__progressbar")
-    .children(".block-text")
-    .eq(1)
-    .addClass("active");
-});
-$(".order-form__submit.registration").click(function () {
-  $(".reg-form").removeClass("active-form");
-  $(".payment-form").addClass("active-form");
-  $(".form-section__progressbar").children(".block").eq(2).addClass("active");
-  $(".form-section__progressbar")
-    .children(".block-text")
-    .eq(2)
-    .addClass("active");
-});
-
-$(document).on("click", ".close-modal", function () {
-  $(".form-section__body--modal").hide();
-});
-
-$(document).on("click", ".card-submit", function () {
-  $(".form-section__body--modal").css("display", "flex");
-});
-
+// SET ACTIVE LINK IN HEADER NAVBAR
 function switchActiveHeaderLink() {
   var desktopLinks = document.querySelectorAll(".js-header-link");
 
@@ -184,18 +131,83 @@ function switchActiveHeaderLink() {
   });
 }
 
+// TOGGLE CUSTOM SELECT
+function toggleSelect() {
+  $(".select").on("click", function (e) {
+    e.stopImmediatePropagation();
+    $(".options").slideUp(300, function () {
+      $(this).prev().removeClass("active");
+    });
+
+    $(this).toggleClass("active");
+    if ($(this).hasClass("active")) {
+      $(this).next(".options").slideDown(300);
+    } else {
+      $(this).next(".options").slideUp(300);
+    }
+  });
+  $(document).on("click", function (e) {
+    e.stopImmediatePropagation();
+    $(".select.active")
+      .next(".options")
+      .slideUp(300, function () {
+        $(this).prev().removeClass("active");
+      });
+  });
+}
+
+// HANDLE SELECT DROPDOWN OPTION
+function selectCustomSelectOption() {
+  $(".options").on("click", function (e) {
+    e.stopImmediatePropagation();
+
+    if ($(e.target).hasClass("options__item")) {
+      var select = $(this).prev();
+      select
+        .find(".select__value")
+        .text($(e.target).text())
+        .removeClass("default");
+      $(this).slideUp(300, function () {
+        select.removeClass("active");
+      });
+
+      var name = select.data("name");
+
+      $("input[name=" + name + "]").val($(e.target).text());
+    }
+  });
+}
+
+// SWITCH AUTHENTIFICATION FORMS
+function handleRadioButtonChange() {
+  $(".auth-toggler__item").on("click", function (e) {
+    e.stopImmediatePropagation();
+    var inputId = $(this).find("input").attr("id");
+    if (inputId === "registration") {
+      $(".registration-info").show();
+      $(".page-btn--auth")
+        .removeClass("js-login-btn")
+        .addClass("js-register-btn");
+    } else {
+      $(".registration-info").hide();
+      $(".page-btn--auth")
+        .removeClass("js-register-btn")
+        .addClass("js-login-btn");
+    }
+  });
+}
+
 $(document).ready(function () {
   toggleDropdownMenu();
   toggleDropdownMenuOnDocumentClick();
-
   toggleSubnavbar();
-  // openSubnavbar();
-  // toggleSubnavbarOnDocumentClick();
   openMobileNavbar();
   openMobileSubnavbar();
   fadeHeaderOnSctoll();
   redirectOnPreorderFormSubmit();
   dateInputTypeChange();
-  hideNotActiveForm();
   switchActiveHeaderLink();
+  toggleSelect();
+  selectCustomSelectOption();
+  handleRadioButtonChange();
 });
