@@ -135,7 +135,7 @@
 
   <div class="checkbox">
     <input type="checkbox" name="agreement" id="agreement">
-    <label for="agreement">点击此处同意EduExpertCare用户条款及隐私协议 </label>
+    <label for="agreement"><span></span>点击此处同意EduExpertCare用户条款及隐私协议 </label>
   </div>
 
   <button type="submit" class="page-btn page-btn--order">确认订单详情</button>

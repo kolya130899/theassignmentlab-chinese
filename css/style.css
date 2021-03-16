@@ -1529,18 +1529,18 @@ textarea {
   cursor: pointer;
   position: relative;
 }
-.checkbox > label::after {
+.checkbox > label > span::before {
   content: "";
   width: 12px;
   height: 5px;
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
   position: absolute;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  left: 50%;
+  top: 1.5px;
+  transform: translateX(-50%) rotate(-45deg);
 }
-.checkbox > label::before {
+.checkbox > label > span {
   content: "";
   display: inline-block;
   width: 18px;
@@ -1551,8 +1551,9 @@ textarea {
   vertical-align: middle;
   margin-right: 10px;
   box-sizing: border-box;
+  position: relative;
 }
-.checkbox > input:checked + label::before {
+.checkbox > input:checked + label > span {
   border-color: transparent;
   background: #5fcf9d;
 }
