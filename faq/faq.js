@@ -115,10 +115,25 @@ function switchFaqsTabs() {
 
       var tabName = $(this).find("p").text();
 
+      $(".faq-nav-item").each(function () {
+        if ($(this).hasClass("visible")) {
+          $(this).removeClass("visible");
+        }
+      });
+
       printFaqs(tabName);
+    } else {
+      $(".faq-nav-item").each(function () {
+        if (!$(this).hasClass("visible")) {
+          $(this).addClass("visible");
+        } else {
+          $(this).removeClass("visible");
+        }
+      });
     }
   });
 }
+
 // TOGGLE FAQs
 function toggleFaq() {
   $(document).on("click", ".faq-item", function () {
@@ -152,4 +167,5 @@ $(document).ready(function () {
   printFaqs(faqs[0].tab);
   switchFaqsTabs();
   toggleFaq();
+  // toggleMobileFaqsTabs();
 });

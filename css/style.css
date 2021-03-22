@@ -276,6 +276,9 @@ p {
   margin-bottom: 16px;
   text-align: center;
 }
+.preorder-form > .select-wrapper {
+  max-width: none;
+}
 .custom-form-element {
   margin-bottom: 16px;
   position: relative;
@@ -1635,7 +1638,6 @@ textarea {
   font-size: 20px;
   line-height: 1.6;
   color: #31343a;
-  margin-bottom: 8px;
   position: relative;
 }
 .faq-item > h3::after {
@@ -1654,6 +1656,9 @@ textarea {
 .faq-item.active > h3::after {
   border-color: #5fcf9d;
   transform: translateY(-50%) rotate(225deg);
+}
+.faq-item p {
+  margin-top: 8px;
 }
 .faq-item p,
 .faq-item ul {
@@ -1781,6 +1786,52 @@ textarea {
   .order__right {
     position: static;
     margin: 48px 0 0;
+  }
+  .faq-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 15px;
+  }
+  .faq-nav-item:not(.active) {
+    display: none;
+    order: 2;
+  }
+  .faq-nav-item.visible {
+    display: block;
+  }
+  .faq-nav-item {
+    width: 100%;
+    padding: 0;
+    padding: 0 24px;
+  }
+  .faq-nav-item.active {
+    border: none;
+    order: 1;
+  }
+  .faq-nav-item__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 808px;
+    margin: 0 auto;
+  }
+  .faq-nav-item.active > .faq-nav-item__container::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #666c7d;
+    border-right: 2px solid #666c7d;
+    right: 0;
+    top: 50%;
+    transform: rotate(45deg);
+    transition: 0.3s ease;
+    margin-left: auto;
+  }
+  .faq-nav-item__container > svg {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -1996,6 +2047,18 @@ textarea {
   }
   .payment__icons > img {
     max-width: 76px;
+  }
+  .faq-nav-item__container {
+    padding: 0;
+  }
+  .faq-nav-item {
+    padding: 0 12px;
+  }
+  .faq-item {
+    padding: 16px 12px;
+  }
+  .faq-nav-item__container > svg {
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 400px) {

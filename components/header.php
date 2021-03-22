@@ -5,7 +5,7 @@
 
   </div>
   <nav class="header__navbar-mobile">
-    <a href="#" class="text" id="open-mobile-subnavbar">代谢服务</a>
+    <a href="#" class="text" id="open-mobile-subnavbar">代写服务</a>
     <nav class="header__navbar-mobile--subnavbar">
       <a href="<?= $url; ?>essay-writing/" class="text">Essay 代写服务</a>
       <a href="<?= $url; ?>online-course/" class="text">网课代写服务</a>
@@ -24,7 +24,7 @@
   </a>
   <!-- DESKTOP NAVBAR -->
   <nav class="header__navbar">
-    <a href="#" class="text" id="open-subnavbar">代谢服务</a>
+    <a href="#" class="text" id="open-subnavbar">代写服务</a>
     <nav class="header__navbar--subnavbar">
       <a href="<?= $url; ?>essay-writing/" class="text">Essay 代写服务</a>
       <a href="<?= $url; ?>online-course/" class="text">网课代写服务</a>
