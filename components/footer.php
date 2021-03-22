@@ -6,7 +6,7 @@
           <img src="<?= $url; ?>img/footer-logo.svg" alt="" />
         </div>
         <nav class="footer__left--navbar">
-          <a href="<?= $url; ?>services/">代谢服务 </a>
+          <a href="<?= $url; ?>services/">代写服务 </a>
           <a href="<?= $url; ?>prices/">计算价格</a>
           <a href="<?= $url; ?>blog/">博客</a>
           <a href="<?= $url; ?>faq/">常见问题</a>
