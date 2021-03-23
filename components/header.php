@@ -13,7 +13,7 @@
       <a href="<?= $url; ?>assignment/" class="text"> Assignment 代写服务</a>
     </nav>
     <a href="#" class="text">计算价格</a>
-    <a href="#" class="text">博客</a>
+    <a href="<?= $url; ?>blog/" class="text">博客</a>
     <a href="<?= $url; ?>faq/" class="text">常见问题</a>
     <a href="#" class="text">联系客服</a>
   </nav>
@@ -32,7 +32,7 @@
       <a href="<?= $url; ?>assignment/" class="text"> Assignment 代写服务</a>
     </nav>
     <a href="#" class="text js-header-link active-page">计算价格</a>
-    <a href="#" class="text js-header-link ">博客</a>
+    <a href="<?= $url; ?>blog/" class="text js-header-link ">博客</a>
     <a href="<?= $url; ?>faq/" class="text js-header-link ">常见问题</a>
     <a href="#" class="text js-header-link ">联系客服</a>
   </nav>
