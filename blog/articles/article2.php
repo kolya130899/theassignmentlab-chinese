@@ -1,4 +1,4 @@
-<h2>Project代写：80分以下全额退款，100%原创，轻松搞定各类专业Project</h2>
+<h2 class="article__main-title">Project代写：80分以下全额退款，100%原创，轻松搞定各类专业Project</h2>
 
 <img src="img/article2-1.png" alt="article 2 1">
 

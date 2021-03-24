@@ -1,4 +1,10 @@
 <?php
+
+$article = $_GET["article"];
+if (!file_exists($article . ".php")) {
+  header("Location: " . $_SERVER["HTTP_REFERER"]);
+}
+
 include("../../components/head.php");
 ?>
 
@@ -19,8 +25,12 @@ include("../../components/head.php");
 
 
         <?php
-        $article = $_GET["article"];
-        include($article . ".php");
+        if (!file_exists($article . ".php")) {
+          echo ("<h2>This article doesn't exist</h2>");
+          // header("Location: " . $_SERVER["HTTP_REFERER"]);
+        } else {
+          include($article . ".php");
+        }
         ?>
       </div>
       <?php
