@@ -20,11 +20,11 @@ include("../components/head.php")
     <div class="progressbar">
       <picture>
         <?php
-        if ($_GET["form"] == "order-details") {
+        if ($_GET["f"] == "order-details") {
           echo "<source srcset='../img/progress1-mob.svg' media='(max-width: 600px)'> <img src='../img/progress1.svg' alt=''>";
-        } else if ($_GET["form"] == "auth") {
+        } else if ($_GET["f"] == "auth") {
           echo "<source srcset='../img/progress2-mob.svg' media='(max-width: 600px)'> <img src='../img/progress2.svg' alt=''>";
-        } else if ($_GET["form"] == "payment") {
+        } else if ($_GET["f"] == "payment") {
           echo "<source srcset='../img/progress3-mob.svg' media='(max-width: 600px)'> <img src='../img/progress3.svg' alt=''>";
         } else {
           echo "This form doesn't exist";
@@ -36,11 +36,11 @@ include("../components/head.php")
     <div class="order__wrapper">
       <div class="order__left">
         <?php
-        if ($_GET["form"] == "order-details") {
+        if ($_GET["f"] == "order-details") {
           include("./forms/order-form.php");
-        } else if ($_GET["form"] == "auth") {
+        } else if ($_GET["f"] == "auth") {
           include("./forms/auth.php");
-        } else if ($_GET["form"] == "payment") {
+        } else if ($_GET["f"] == "payment") {
           include("./forms/payment.php");
         } else {
           echo "should be a new form";
@@ -96,7 +96,7 @@ include("../components/head.php")
 
 
   <?
-    include("../components/footer.php");
+  include("../components/footer.php");
   ?>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

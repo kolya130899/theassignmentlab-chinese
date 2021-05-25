@@ -104,14 +104,13 @@ function fadeHeaderOnSctoll() {
 // REDIRECT TO CHECKOUT ON HERO FORM SUBMIT
 function redirectOnPreorderFormSubmit() {
   $(document).on("click", ".submit-btn", function () {
-    window.location.href = "/checkout?form=order-details";
+    window.location.href = "/checkout?f=order-details";
   });
 }
 
 // DATE INPUT TYPE CHANGE
 function dateInputTypeChange() {
   $(document).on("focus", "#date-input", function () {
-    console.log(this);
     $(this).attr("type", "date");
   });
 }
@@ -133,35 +132,44 @@ function switchActiveHeaderLink() {
 
 // TOGGLE CUSTOM SELECT
 function toggleSelect() {
-  $(".select").on("click", function (e) {
-    e.stopImmediatePropagation();
-    $(".options").slideUp(300, function () {
-      $(this).prev().removeClass("active");
-    });
+  $(document).on("click", function (e) {
+    var target = $(e.target);
 
-    $(this).toggleClass("active");
-    if ($(this).hasClass("active")) {
-      $(this).next(".options").slideDown(300);
+    var activeSelect = $(".select__input.active");
+
+    if (target.hasClass("select__input") && !target.hasClass("active")) {
+      closeSelectDropdown(activeSelect);
+
+      target.addClass("active");
+      target.next(".select__dropdown").finish().slideDown(300);
+    } else if (
+      target.closest("div").hasClass("select__input") &&
+      !target.closest("div").hasClass("active")
+    ) {
+      closeSelectDropdown(activeSelect);
+
+      target.closest("div").addClass("active");
+      target.closest("div").next(".select__dropdown").finish().slideDown(300);
     } else {
-      $(this).next(".options").slideUp(300);
+      closeSelectDropdown(activeSelect);
     }
   });
-  $(document).on("click", function (e) {
-    e.stopImmediatePropagation();
-    $(".select.active")
-      .next(".options")
-      .slideUp(300, function () {
-        $(this).prev().removeClass("active");
-      });
-  });
+}
+
+function closeSelectDropdown(activeSelect) {
+  activeSelect
+    .next(".select__dropdown")
+    .finish()
+    .slideUp(300, function () {
+      activeSelect.removeClass("active");
+    });
 }
 
 // HANDLE SELECT DROPDOWN OPTION
 function selectCustomSelectOption() {
-  $(".options").on("click", function (e) {
+  $(document).on("click", ".select__dropdown", function (e) {
     e.stopImmediatePropagation();
-
-    if ($(e.target).hasClass("options__item")) {
+    if ($(e.target).hasClass("dropdown__option")) {
       var select = $(this).prev();
       select
         .find(".select__value")

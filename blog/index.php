@@ -21,7 +21,7 @@ include("../components/head.php");
     <div class="blog__wrapper">
       <!-- #1 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article1">
+        <a class="blog-article__image" href="./article1/">
           <img src="img/article1.svg" alt="article 1">
         </a>
         <h2 class="blog-article__title">找代写方法 判定代写机构是否正规靠谱的关键点</h2>
@@ -34,7 +34,7 @@ include("../components/head.php");
       </div>
       <!-- #2 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article2">
+        <a class="blog-article__image" href="./article2/">
           <img src="img/article2.svg" alt="article 2">
         </a>
         <h2 class="blog-article__title">Project代写：80分以下全额退款，100%原创，轻松搞定各类专业Project</h2>
@@ -47,7 +47,7 @@ include("../components/head.php");
       </div>
       <!-- #3 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article3">
+        <a class="blog-article__image" href="./article3/">
           <img src="img/article3.svg" alt="article 3">
         </a>
         <h2 class="blog-article__title">英语论文润色Proofreading怎么做？有没有靠谱的论文润色机构推荐？</h2>
@@ -60,7 +60,7 @@ include("../components/head.php");
       </div>
       <!-- #4 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article4">
+        <a class="blog-article__image" href="./article4/">
           <img src="img/article4.svg" alt="article 4">
         </a>
         <h2 class="blog-article__title">献综述写作六种类型</h2>
@@ -73,7 +73,7 @@ include("../components/head.php");
       </div>
       <!-- #5 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article5">
+        <a class="blog-article__image" href="./article5/">
           <img src="img/article5.svg" alt="article 5">
         </a>
         <h2 class="blog-article__title">高分NARRATIVE ESSAY写作技巧</h2>
@@ -87,7 +87,7 @@ include("../components/head.php");
       </div>
       <!-- #6 -->
       <div class="blog-article">
-        <a class="blog-article__image" href="articles/?article=article6">
+        <a class="blog-article__image" href="./article6/">
           <img src="img/article6.svg" alt="article 6">
         </a>
         <h2 class="blog-article__title">Statement of Purpose怎么写</h2>

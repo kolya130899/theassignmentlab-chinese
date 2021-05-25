@@ -28,34 +28,34 @@
   <h4 class="order-form__subtitle order-form__subtitle--auth">或者填写下面的表格</h4>
 
   <!-- EMAIL -->
-  <div class="select-wrapper auth-input">
-    <p class="label">邮箱</p>
+  <div class="select auth-input">
+    <p class="select__label">邮箱</p>
     <input type="email" name="email">
   </div>
   <!-- PASSWORD -->
-  <div class="select-wrapper auth-input">
-    <p class="label">密码</p>
+  <div class="select auth-input">
+    <p class="select__label">密码</p>
     <input type="password" name="password" autocomplete="off">
   </div>
   <div class="registration-info">
     <!-- CONFIRM PASSWORD -->
-    <div class="select-wrapper auth-input">
-      <p class="label">密码</p>
+    <div class="select auth-input">
+      <p class="select__label">密码</p>
       <input type="password" name="confirm-password" autocomplete="off">
     </div>
     <!-- PHONE-->
-    <div class="select-wrapper auth-input">
-      <p class="label">手机（WhatsApp</p>
+    <div class="select auth-input">
+      <p class="select__label">手机（WhatsApp</p>
       <input type="tel" name="phone">
     </div>
     <!-- QQ NUMBER-->
-    <div class="select-wrapper auth-input">
-      <p class="label">QQ号码</p>
+    <div class="select auth-input">
+      <p class="select__label">QQ号码</p>
       <input type="tel" name="phone">
     </div>
     <!-- NAME-->
-    <div class="select-wrapper auth-input">
-      <p class="label">姓名</p>
+    <div class="select auth-input">
+      <p class="select__label">姓名</p>
       <input type="text" name="name">
     </div>
   </div>

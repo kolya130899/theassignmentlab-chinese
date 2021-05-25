@@ -24,7 +24,7 @@ include("components/head.php")
             <h3>每页$18 – $25，最快12小时完成</h3>
             <p class="text">包含但不限于Summary， Discussion， Reflection和Response</p>
           </div>
-          <span class="hero-btn page-btn text">立刻下单</span>
+          <a href="checkout?f=order-details" class="hero-btn page-btn text">立刻下单</a>
         </div>
         <!-- <div class="hero__right"> -->
         <?php
@@ -425,7 +425,7 @@ include("components/head.php")
 
   </section>
 
-  <?include("components/footer.php")?>
+  <? include("components/footer.php") ?>
 
 
 

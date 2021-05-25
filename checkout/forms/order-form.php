@@ -4,89 +4,56 @@
   <h4 class="order-form__subtitle order-form__subtitle--grey">有任何问题，请随时联系客服。</h4>
 
   <!-- TYPE OF SERVICE -->
-  <div class="select-wrapper">
-    <p class="label">服务类型</p>
-    <div class="select" data-name="service-type">
+  <div class="select">
+    <p class="select__label">服务类型</p>
+    <div class="select__input" data-name="service-type">
       <span class="select__value default">选择</span>
     </div>
-    <div class="options"></div>
+    <div class="dropdown select__dropdown service-type-dropdown"></div>
   </div>
 
   <!-- SUBJECT -->
-  <div class="select-wrapper">
-    <p class="label">学科</p>
-    <div class="select" data-name="subject">
+  <div class="select">
+    <p class="select__label">学科</p>
+    <div class="select__input" data-name="subject">
       <span class="select__value default">选择</span>
     </div>
-    <div class="options"></div>
+    <div class="dropdown select__dropdown"></div>
   </div>
 
   <!-- ACADEMIC LEVEL -->
-  <div class="select-wrapper">
-    <p class="label">学习等级</p>
-    <div class="select" data-name="academic-level">
+  <div class="select">
+    <p class="select__label">学习等级</p>
+    <div class="select__input" data-name="academic-level">
       <span class="select__value default">选择</span>
     </div>
-    <div class="options"></div>
+    <div class="dropdown select__dropdown"></div>
   </div>
 
   <!-- TIMEZONE -->
-  <div class="select-wrapper">
-    <p class="label">本地时区</p>
-    <div class="select" data-name="timezone">
+  <div class="select">
+    <p class="select__label">本地时区</p>
+    <div class="select__input" data-name="timezone">
       <span class="select__value default">选择</span>
     </div>
-    <div class="options"></div>
+    <div class="dropdown select__dropdown"></div>
   </div>
 
-  <div class="order-form__group">
-    <!-- DEADLINE -->
-    <div class="select-wrapper">
-      <p class="label">本地时区</p>
-      <input id="datetimepicker" type="text" placeholder="..." name="deadline" autocomplete="off">
-    </div>
+  <!-- DEADLINE -->
+  <div class="select">
+    <p class="select__label">本地时区</p>
+    <input id="datetimepicker" type="text" placeholder="..." name="deadline" autocomplete="off">
+  </div>
 
-    <!-- NUMBER OF PAGES -->
-    <div class="select-wrapper">
-      <p class="label">字数 </p>
-      <div class="select" data-name="pages-quantity">
-        <span class="select__value default">页等于300字</span>
-      </div>
-      <div class="options"></div>
-    </div>
-
-    <!-- SITATIONS -->
-    <div class="select-wrapper">
-      <p class="label">引用格式 </p>
-      <div class="select" data-name="sitations">
-        <span class="select__value default">选择</span>
-      </div>
-      <div class="options"></div>
-    </div>
-
-    <!-- WORDS QUANTITY -->
-    <div class="select-wrapper">
-      <p class="label">字数</p>
-      <div class="select" data-name="words-quantity">
-        <span class="select__value default">页等于300字</span>
-      </div>
-      <div class="options"></div>
-    </div>
+  <div class="order-form__group js-specified-inputs">
 
   </div>
 
-  <!-- TYPE OF DOCUMENT -->
-  <div class="select-wrapper">
-    <p class="label">写作类型</p>
-    <div class="select" data-name="document-type">
-      <span class="select__value default">选择</span>
-    </div>
-    <div class="options"></div>
-  </div>
+
 
   <!-- DESCRIPTION -->
-  <div class="select-wrapper">
-    <p class="label">订单要求</p>
+  <div class="select">
+    <p class="select__label">订单要求</p>
     <textarea name="description" id="description" cols="20" rows="4" placeholder="请告诉你作业的要求，写手应该注意的特点，要不需要draft"></textarea>
   </div>
 
@@ -128,7 +95,7 @@
   </div>
 
   <!-- PROMOCODE -->
-  <div class="select-wrapper select-wrapper--promocode">
+  <div class="select select--promocode">
     <input type="text" name="promocode" placeholder="我有优惠码">
     <p class="apply-promocode">Apply</p>
   </div>
@@ -150,10 +117,9 @@
   <input type="hidden" name="academic-level" value="">
   <input type="hidden" name="timezone" value="">
   <!-- DEADLINE input#deadline -->
-  <input type="hidden" name="pages-quantity" value="">
-  <input type="hidden" name="sitations" value="">
-  <input type="hidden" name="words-quantity" value="">
-  <input type="hidden" name="document-type" value="">
+
   <!-- DESCRIPTION textarea#description -->
   <!-- FILES INPUTS -->
 </form>
+
+<script src="js/modifyOrderForm.js"></script>

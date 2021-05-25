@@ -1,6 +1,8 @@
+<? include("../components/head.php") ?>
+
 <h2 class="article__main-title">Project代写：80分以下全额退款，100%原创，轻松搞定各类专业Project</h2>
 
-<img src="img/article2-1.png" alt="article 2 1">
+<img src="../img/article2-1.png" alt="article 2 1">
 
 <p>
   王牌Project代写 Edu Expert Care，专业学术代写团队，免费提交作业要求，满意后付款，成绩80%以下全额退款。所有订单可靠准时，保证100%原创。Edu Expert Care，最高质量的Project作业代写，汇集世界名校导师，无论是专业Project还是毕业Capstone Project， 我们都能帮你解决！
@@ -38,7 +40,7 @@
 <p>
   Edu Expert Care代写Project学科包括但不限于：
 </p>
-<img src="img/article2-2.png" alt="article 2 2">
+<img src="../img/article2-2.png" alt="article 2 2">
 
 <h3>1. 数学 Math Project代写</h3>
 <p>
@@ -95,7 +97,7 @@
 </p>
 
 <h3>Project代写下单流程</h3>
-<img src="img/article2-3.png" alt="article 2 3">
+<img src="../img/article2-3.png" alt="article 2 3">
 <p>
   <b>Step 1：</b>提交作业要求<br>
   三分钟即可完成下单，下单时可以选择作业需要的时间和具体要求。
@@ -160,3 +162,5 @@
   <br><br>
   Edu Expert Care专业Project作业代写辅导，有问题欢迎随时联系网页客服。
 </p>
+
+<? include("../components/footer.php") ?>

@@ -20,32 +20,32 @@
 
     <div class="payment__body">
       <!-- First Name-->
-      <div class="select-wrapper">
-        <p class="label">First Name</p>
+      <div class="select">
+        <p class="select__label">First Name</p>
         <input type="text" name="first-name">
       </div>
 
       <!-- Last Name-->
-      <div class="select-wrapper">
-        <p class="label">Last Name</p>
+      <div class="select">
+        <p class="select__label">Last Name</p>
         <input type="text" name="last-name">
       </div>
 
       <!-- Card Number -->
-      <div class="select-wrapper">
-        <p class="label">Card Number (No spaces or dashes)</p>
+      <div class="select">
+        <p class="select__label">Card Number (No spaces or dashes)</p>
         <input type="number" name="card-number">
       </div>
 
       <!-- Expiration -->
-      <div class="select-wrapper">
-        <p class="label">Expiration Date(MM/YY)</p>
+      <div class="select">
+        <p class="select__label">Expiration Date(MM/YY)</p>
         <input type="text" name="exp-date">
       </div>
 
       <!-- CVV -->
-      <div class="select-wrapper">
-        <p class="label">CVV</p>
+      <div class="select">
+        <p class="select__label">CVV</p>
         <input type="number" name="cvv">
       </div>
 

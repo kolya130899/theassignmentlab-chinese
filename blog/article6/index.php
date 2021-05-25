@@ -1,6 +1,8 @@
+<? include("../components/head.php") ?>
+
 <h2 class="article__main-title">Statement of Purpose怎么写</h2>
 
-<img src="img/article6-1.png" alt="article 6 1">
+<img src="../img/article6-1.png" alt="article 6 1">
 
 <p>
   Personal Statement(个人陈述)和Statement of Purpose(目标陈述), 是申请美国硕博时绕不开的留学文书写作难题。大多数学校会PS和SOP二选其一，而且还往往会模糊二者的区别。但是，就有些学校特别不辞辛苦，认真严肃。就比如今天这篇的主角，加州大学伯克利分校 UC Berkeley。在研究生的申请页面上，伯克利明确要求，PS和SOP都得写，且内容不得重复。为区分二者的内容，官网上还给了一些有用的提示和建议。
@@ -34,7 +36,7 @@
   工作经验，尤其是如果你在一个与你希望在研究生院学习的领域相似的领域里有任何测试、设计、研究或实习的职责。
 </p>
 
-<img src="img/article6-2.png" alt="article 6 2">
+<img src="../img/article6-2.png" alt="article 6 2">
 
 <h3>Part 3: Discuss the relevance of your recent and current activities </h3>
 <h4>第三部分:讨论你最近和当前活动的相关性</h4>
@@ -64,7 +66,7 @@
   以积极的方式结束你的发言，表明你对未来挑战的兴奋和准备。
 </p>
 
-<img src="img/article6-3.jpg" alt="article 6 3">
+<img src="../img/article6-3.jpg" alt="article 6 3">
 
 <h3>Essential Tips 基本提示</h3>
 <p>
@@ -92,3 +94,5 @@
   <br><br>
   除非具体项目另有说明，否则一定要简明扼要；一篇理想的文章应该简洁地说出它需要的一切。大约500到1000个精选的文字(12号字体的1-2个单倍行距页面)比清晰度较低、组织性较差的文字要好。
 </p>
+
+<? include("../components/footer.php") ?>

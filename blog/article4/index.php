@@ -1,10 +1,12 @@
+<? include("../components/head.php") ?>
+
 <h2 class="article__main-title">献综述写作六种类型</h2>
 
 <p>
   在上一期了解了Literature Review写作常见问题后，这一期，我们要来简单知道文献综述的几种类型，针对不同学科，专业领域，选择合适类型的文献综述，能帮助写作者更好地表达自己的思路。
 </p>
 
-<img src="img/article4-1.png" alt="article 4 1">
+<img src="../img/article4-1.png" alt="article 4 1">
 
 <h3>文献综述写作</h3>
 <p>
@@ -42,3 +44,5 @@
   <br><br>
   以上为大家介绍了6种类型的文献综述，即议论型综述，整合型综述，历史综述，方法论综述，系统综述，理论综述。大家可以根据自己的学科专业和写作需求来选择合适的文献综述的类型。如果有<b>文献综述代写</b>需要，请联系网站客服。
 </p>
+
+<? include("../components/footer.php") ?>
