@@ -1,11 +1,12 @@
+// options for the order form dropdowns
 var selectOptions = [
   {
     name: "service-type",
     options: [
-      "Writing&#92;论文写作",
-      "Editing&Proofreading&#92; 编辑修改&校稿",
-      "Exam&#92;考试",
-      "Online course&#92;网课代写",
+      "Writing &#92;论文写作",
+      "Editing&Proofreading &#92; 编辑修改&校稿",
+      "Exam &#92;考试",
+      "Online course &#92;网课代写",
       "Assignment（编码,Excel计算,分析,数学,工科）",
     ],
   },
@@ -297,51 +298,97 @@ var selectOptions = [
       },
     ],
   },
+  {
+    name: "exam-duration",
+    options: ["30", "40", "50", "60", "75", "90", "120", "180"],
+  },
+  {
+    name: "exam-type",
+    options: ["Online", "Take home", "In Account"],
+  },
+  {
+    name: "exam-scope",
+    options: ["weekly/unit", "quarter", "midterm", "final", "other"],
+  },
+  {
+    name: "question-type",
+    options: [
+      "MCQ",
+      "free response",
+      "essay questions",
+      "calculations",
+      "other",
+    ],
+  },
+  {
+    name: "course-duration",
+    options: [
+      "1 周",
+      "2 周",
+      "3 周",
+      "4 周",
+      "5 周",
+      "6 周",
+      "7 周",
+      "8 周",
+      "9 周",
+      "10 周",
+      "11 周",
+      "12 周",
+      "13 周",
+      "14 周",
+      "15 周",
+      "16 周",
+      "17 周",
+      "18 周",
+      "19 周",
+      "20 周",
+    ],
+  },
 ];
 
+// adding options to the select when the user clicks the input
 function addOptionsToCustomSelects() {
-  selectOptions.forEach(function (item) {
-    var name = item.name;
+  $(document).on("click", ".select__input", function () {
+    var inputName = $(this).data("name");
 
-    if (typeof item.options[0] === "string") {
-      item.options.forEach(function (item) {
-        var optionElement =
-          "<p class='options__item' data-value='" +
+    var result = selectOptions.find(function (item) {
+      return item.name === inputName;
+    });
+
+    var options = "";
+    result.options.forEach(function (item) {
+      if (typeof item === "string") {
+        options +=
+          "<p class='dropdown__option' data-value='" +
           item +
           "'>" +
           item +
           " </p>";
+      } else {
+        var title =
+          "<div class='dropdown__title'><span>" + item.title + "</span></div>";
 
-        $(".select[data-name=" + name + "]")
-          .next(".options")
-          .append(optionElement);
-      });
-    } else {
-      item.options.forEach(function (item) {
-        var optionTitle =
-          "<div class='options__title'><span>" + item.title + "</span></div>";
-        $(".select[data-name=" + name + "]")
-          .next(".options")
-          .append(optionTitle);
-
-        item.options.forEach(function (item) {
-          var optionElement =
-            "<p class='options__item' data-value='" +
-            item +
+        var nestedOptionsString = "";
+        item.options.forEach(function (nestedOption) {
+          nestedOptionsString +=
+            "<p class='dropdown__option' data-value='" +
+            nestedOption +
             "'>" +
-            item +
+            nestedOption +
             " </p>";
-
-          $(".select[data-name=" + name + "]")
-            .next(".options")
-            .append(optionElement);
         });
-      });
-    }
+
+        options += title + nestedOptionsString;
+      }
+    });
+
+    var dropdown = $(this).next(".dropdown");
+    dropdown.html(options);
   });
 }
 
-// HANDLE FILE DRAG AND FROP
+// HANDLE FILE DRAG AND DROP
 function handleFileDragLeave() {
   $(".file-drop__zone").on("dragleave", function (e) {
     e.preventDefault();
@@ -383,7 +430,7 @@ function submitOrderForm() {
     e.preventDefault();
     var data = $(this).serializeArray();
     console.log(data);
-    window.location.href = "?form=auth";
+    window.location.href = "?f=auth";
   });
 }
 
@@ -393,7 +440,7 @@ function submitAuthForm() {
     e.preventDefault();
     var data = $(this).serializeArray();
     console.log(data);
-    window.location.href = "?form=payment";
+    window.location.href = "?f=payment";
   });
 }
 

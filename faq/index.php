@@ -124,7 +124,7 @@ include("../components/head.php");
           <img src="../img/cta1.svg" alt="cta1">
         </div>
         <h3>免费下单<br>给专家要求</h3>
-        <a class="cta-item__button" href="../checkout/?form=order-details">
+        <a class="cta-item__button" href="../checkout/?f=order-details">
           <img src="../img/arrow-right.svg" alt="arrow right">
         </a>
       </div>
@@ -134,7 +134,7 @@ include("../components/head.php");
           <img src="../img/cta2.svg" alt="cta2">
         </div>
         <h3>有什么不清楚的<br>请联系客服</h3>
-        <a class="cta-item__button" href="../checkout/?form=order-details">
+        <a class="cta-item__button" href="../checkout/?f=order-details">
           <img src="../img/arrow-right.svg" alt="arrow right">
         </a>
       </div>
@@ -144,7 +144,7 @@ include("../components/head.php");
           <img src="../img/cta3.svg" alt="cta2">
         </div>
         <h3>查看有关专业写手的<br>更多信息</h3>
-        <a class="cta-item__button" href="../checkout/?form=order-details">
+        <a class="cta-item__button" href="../checkout/?f=order-details">
           <img src="../img/arrow-right.svg" alt="arrow right">
         </a>
       </div>
@@ -177,7 +177,7 @@ include("../components/head.php");
       </div>
     </div>
 
-    <a class="cta-item__button" href="../checkout/?form=order-details">确定付款</a>
+    <a class="cta-item__button" href="../checkout/?f=order-details">确定付款</a>
   </section>
 
 

@@ -1,3 +1,5 @@
+<? include("../components/head.php") ?>
+
 <h2 class="article__main-title">英语论文润色Proofreading怎么做？有没有靠谱的论文润色机构推荐？</h2>
 
 <p>
@@ -6,7 +8,7 @@
 </p>
 
 <h3>论文润色Proofreading的准备工作</h3>
-<img src="img/article3-1.jpg" alt="article 3 1">
+<img src="../img/article3-1.jpg" alt="article 3 1">
 
 <p>
   在Proofreading前，我们必须要完成文本中关于内容的部分的最终修改。如果仍然需要处理论文的中心论点，论点讨论和文章组织，或者需要重新安排或更改特定部分，请不要先纠结句子和单词级别的错误这些错误留到Proofreading的环节来做。
@@ -21,7 +23,7 @@
 </p>
 
 <h3>论文润色Proofreading小策略</h3>
-<img src="img/article3-2.jpg" alt="article 3 2">
+<img src="../img/article3-2.jpg" alt="article 3 2">
 
 <p>
   在Proofreading时，最好将文章打印下来，而不是用电子版进行proofreading。打印版本的文章，可以方便我们在校对过程中，及时标记错误，也更加容易阅读查看，有助于更好地进行文章润色。
@@ -50,3 +52,5 @@
   文中增加批注，对意思模糊、有歧义的部分提供修改建议
   帮助你提升写作水平，写出更地道、更专业的文章
 </p>
+
+<? include("../components/footer.php") ?>

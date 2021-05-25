@@ -1,3 +1,5 @@
+<? include("../components/head.php") ?>
+
 <h2 class="article__main-title">高分NARRATIVE ESSAY写作技巧</h2>
 
 <p>
@@ -6,7 +8,7 @@
   记叙文通过讲述故事巧妙地引导读者，而不是像修辞性论文那样抨击现实，说明问题。你可以通过以下技巧来改进记叙文写作：
 </p>
 
-<img src="img/article5-1.png" alt="article 5 1">
+<img src="../img/article5-1.png" alt="article 5 1">
 
 <h3>（1）清晰的思路</h3>
 <p>
@@ -56,3 +58,5 @@
   <br><br>
   欢迎有需要NARRATIVE ESSAY代写的留学生小伙伴们联系我们，我们将为大家提供原创高质量Essay代写服务，原创保证，通过保障，欢迎扫描右侧二维码联系我们的客服。
 </p>
+
+<? include("../components/footer.php") ?>
